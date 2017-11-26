@@ -2,7 +2,7 @@ using System;
 
 public interface IPlayer
 {
-    string Name { get; }
+    string Name { get; set; }
 
     int Win { get; }
     int Lose { get; }
@@ -21,7 +21,7 @@ public interface IPlayer
 
 public class Player : IPlayer
 {
-    private readonly string name;
+    private string name;
     private int win = 0;
     private int lose = 0;
     private int par = 0;
@@ -38,8 +38,6 @@ public class Player : IPlayer
         this.name = name;
     }
 
-    public string Name => name;
-
     public int Win => win;
 
     public int Lose => lose;
@@ -49,6 +47,8 @@ public class Player : IPlayer
     public int Score => score;
 
     public int Difficulty => difficulty;
+
+    public string Name { get => name; set => name=value; }
 
     public void AddScore(int points, IPlayer enemy)
     {
@@ -74,10 +74,10 @@ public class Player : IPlayer
         par++;
     }
 
-    public override string ToString()
+    /*public override string ToString()
     {
         return Name[0].ToString().ToUpper();
-    }
+    }*/
 }
 
 public sealed class PlayerEasyComputer : Player
