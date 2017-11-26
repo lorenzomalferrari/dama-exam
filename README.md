@@ -13,3 +13,5 @@ Oltre a sviluppare il software appena descritto si chiede di completare almeno u
 <br>
 Sviluppare il software richiesto applicando i pattern visti a lezione (ove possibile senza forzature) e i principi SOLID e strutturando il codice nel modo più semplice e comprensibile possibile.
 Utilizzare gli standard .Net per le nomenclature e la posizione delle parentesi oltre che la lingua inglese per i nomi di classi/variabili/metodi e commenti.
+<br>
+# Modifiche sviluppate da Lorenzo Malferrari, Valerio Cipro e Raffaele Balzani
